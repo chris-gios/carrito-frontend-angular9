@@ -1,0 +1,15 @@
+<!-- Lo que le llega al hijo es [product] que tiene el valor de "producto" -->
+<div class="product-grid">
+  <app-product
+    *ngFor="let product of products"
+    (productClicked)="clickProduct($event)"
+    [product]="product">
+  </app-product>
+  <!-- productClicked = $event = id que llega del hijo -->
+</div>
+
+<!-- <div *ngFor="let product of products">
+    {{ product.title }}
+    <img [src]="product.image"> 
+    {{ product.price }}
+  </div> -->

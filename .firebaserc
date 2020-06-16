@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "carrito-backend": {
+      "hosting": {
+        "carrito-frontend": [
+          "carrito-backend"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "carrito-frontend"
+  }
+}

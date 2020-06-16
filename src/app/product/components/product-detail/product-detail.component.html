@@ -1,0 +1,16 @@
+<!-- el *ngIf es para que no cargue nada hasta que traiga la imagen de la api -->
+<div *ngIf="product"> 
+  <div>
+    <img [src]="product.image" alt="" />
+  </div>
+  <div>
+    <ul>
+      <li>Nombre: {{ product.title }}</li>
+      <li>Precio: {{ product.price | currency }}</li>
+    </ul>
+    <p>{{ product.description }}</p>
+  </div>
+  <button mat-raised-button color="primary" (click)="createProduct()">Crear</button>
+  <button mat-raised-button color="primary" (click)="updateProduct()">Update</button>
+  <button mat-raised-button color="warn" (click)="deleteProduct()">Delete</button>
+</div>
