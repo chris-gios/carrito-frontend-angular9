@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Server Deployed in
 
-https://carrito-frontend.web.app or click here [Carrito-Frontend](https://carrito-frontend.web.app/)
+`https://carrito-frontend.web.app` or click here [Carrito-Frontend](https://carrito-frontend.web.app/)
 
 ## Development server
 
