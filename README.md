@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-# Server Deployed in
+## Server Deployed in
 
 `https://carrito-frontend.web.app` or click here [Carrito-Frontend](https://carrito-frontend.web.app/)
 
