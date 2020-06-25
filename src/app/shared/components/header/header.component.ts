@@ -5,6 +5,8 @@ import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/auth/components/login/login.component';
 import { RegisterComponent } from 'src/app/auth/components/register/register.component';
+import { AuthService } from 'src/app/core/service/auth.service';
+import { NONE_TYPE } from '@angular/compiler';
 
 @Component({
   selector: 'app-header',
@@ -18,6 +20,7 @@ export class HeaderComponent implements OnInit {
 
 
   constructor(
+    private authService: AuthService, // Prueba paravisualizar admin en header si es admin
     private cartService: CartService,
     public dialog: MatDialog
   ) {
@@ -30,6 +33,22 @@ export class HeaderComponent implements OnInit {
     //   this.total = total;
     // });
   }
+
+  // ifAdmin() {
+  //   return this.authService.hasUser().pipe(
+  //     map(user => user === null ? false : true),
+  //     tap(hasUser => {
+  //       if (!hasUser) {
+
+
+  //         this.router.navigate(['']); // te envia a esa ruta si no eres admin
+  //         this.openLogin();
+
+  //         this.router.navigate(['/auth/login']);
+  //       }
+  //     })
+  //   );
+  // }
 
   openLogin() {
     const dialogRef = this.dialog.open(LoginComponent, {

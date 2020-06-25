@@ -9,18 +9,19 @@
         <a mat-button routerLink="/contact" routerLinkActive="active"
           >Contacts</a
         >
+        <a
+          mat-button
+          routerLink="/admin"
+          style="display: none;"
+          routerLinkActive="active"
+          >Admin</a
+        >
       </nav>
       <div>
-        <a
-          mat-raised-button
-          (click)="openLogin()"
-          routerLinkActive="active"
+        <a mat-raised-button (click)="openLogin()" routerLinkActive="active"
           >Login</a
         >
-        <a
-          mat-raised-button
-          (click)="openSignIn()"
-          routerLinkActive="active"
+        <a mat-raised-button (click)="openSignIn()" routerLinkActive="active"
           >Sign in</a
         >
 
