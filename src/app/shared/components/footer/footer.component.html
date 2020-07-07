@@ -1,61 +1,136 @@
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <div class="box">
-          <h3>Productos</h3>
-          <ul>
-            <li>
-              <a routerLink="/products" [queryParams]="{ type: 'news' }"
-                >Nuevos Productos</a
-              >
-            </li>
-            <li>
-              <a routerLink="/products" [queryParams]="{ type: 'offer' }"
-                >En oferta</a
-              >
-            </li>
-            <li>
-              <a routerLink="/products" [queryParams]="{ type: 'latest' }"
-                >Últimos productos</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="box">
-          <h3>Acerca de PlatziStore</h3>
-          <ul>
-            <li><a routerLink="/about-us">Sobre nosotros</a></li>
-            <li><a routerLink="/stores">Nuestras tiendas</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="box">
-          <h3>Contacto</h3>
-          <!-- <mat-form-field color="accent" class="full-width">
-                <input [formControl]="emailInput" matInput placeholder="Su correo" type="email">
-              </mat-form-field>
-              <button (click)="registerMail()" [disabled]="emailInput.invalid" mat-raised-button color="accent">Suscribirse</button> -->
-          <mat-form-field>
-            <input
-              matInput
-              placeholder="Digite su correo"
-              [formControl]="emailField"
-              type="email"
-            />
-          </mat-form-field>
-          <button
-            mat-raised-button
-            [disabled]="emailField.invalid"
-            (click)="sendMail()"
+  <!-- Footer main -->
+  <section class="ft-main">
+    <div class="ft-main-item">
+      <h2 class="ft-title">About</h2>
+      <ul>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'news' }"
+            >Services</a
           >
-            enviar
-          </button>
-        </div>
-      </div>
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Customers</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Careers</a
+          >
+        </li>
+      </ul>
     </div>
-  </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Resources</h2>
+      <ul>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Docs</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >eBooks</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Webinars</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Contact</h2>
+      <ul>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Help</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Sales</a
+          >
+        </li>
+        <li>
+          <a routerLink="/products" [queryParams]="{ type: 'Portfolio' }"
+            >Advertise</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="ft-main-item">
+      <h2 class="ft-title">Stay Updated</h2>
+      <p>Subscribe to our newsletter to get our latest news.</p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input
+          matInput
+          placeholder="Digite su correo"
+          [formControl]="emailField"
+          type="email"
+        />
+      </mat-form-field>
+      <button
+        color="warn"
+        type="submit"
+        value="Subscribe"
+        mat-raised-button
+        [disabled]="emailField.invalid"
+        (click)="sendMail()"
+      >
+        Subscribe
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer social -->
+  <section class="ft-social">
+    <ul class="ft-social-list">
+      <li>
+        <a href="{{ facebook }}" target="_blank"><mat-icon svgIcon="facebook"></mat-icon></a>
+      </li>
+      <li>
+        <a href="{{ twitter }}" target="_blank"><mat-icon svgIcon="twitter"></mat-icon></a>
+      </li>
+      <li>
+        <a href="{{ instagram }}" target="_blank"><mat-icon svgIcon="instagram"></mat-icon></a>
+      </li>
+      <li>
+        <a href="{{ github }}" target="_blank"><mat-icon svgIcon="github"></mat-icon></a>
+      </li>
+      <li>
+        <a href="{{ linkedin }}" target="_blank"><mat-icon svgIcon="linkedin"></mat-icon></a>
+      </li>
+      <li>
+        <a href="{{ youtube }}" target="_blank"><mat-icon svgIcon="youtube"></mat-icon></a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+    <ul class="ft-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2019 Copyright Nowrap Inc.</li>
+    </ul>
+  </section>
 </footer>

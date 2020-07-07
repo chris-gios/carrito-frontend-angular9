@@ -41,7 +41,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatMenuModule,
     MatStepperModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   exports: [
     MatButtonModule,
@@ -61,7 +61,7 @@ import { MatDividerModule } from '@angular/material/divider';
     MatMenuModule,
     MatStepperModule,
     MatDialogModule,
-    MatDividerModule
+    MatDividerModule,
   ]
 })
 export class MaterialModule { }
